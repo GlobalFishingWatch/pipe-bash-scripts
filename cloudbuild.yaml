@@ -40,10 +40,21 @@ steps:
   ]
   waitFor: ['-']
 
+- name: 'gcr.io/cloud-builders/docker'
+  id: python3.10
+  args: [
+    'build',
+    '-t',
+    'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.10',
+    'python3.10/'
+  ]
+  waitFor: ['-']
+
 images:
   - 'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest'
   - 'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.7'
   - 'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.8'
   - 'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.9'
+  - 'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.10'
 
 timeout: 7200s

@@ -13,8 +13,9 @@ The full repository name for Container Registry is `gcr.io/world-fishing-827/git
 
 * `:latest`: Has the current python version (3.7) and the last Google-SDK cli that are using all the pipeline steps.
 * `:latest-python3.7`: Has the current python version (3.7) and the last Google-SDK cli that are using all the pipeline steps.
-* `:latest-python3.8`: Has the new python version (3.8) and the last Google-SDK cli that are using the pipeline steps that requires python3.8.
-* `:latest-python3.9`: Has the new python version (3.9) and the last Google-SDK cli that are using the pipeline steps that requires python3.9.
+* `:latest-python3.8`: Has the python version (3.8) and the last Google-SDK cli that are using the pipeline steps that requires python3.8.
+* `:latest-python3.9`: Has the python version (3.9) and the last Google-SDK cli that are using the pipeline steps that requires python3.9.
+* `:latest-python3.10`: Has the new python version (3.10) and the last Google-SDK cli that are using the pipeline steps that requires python3.10.
 In order to update to the latest Google-SDK cli version, trigger a build.
 
 ## Usage
