@@ -14,9 +14,11 @@ steps:
   id: python3.7
   args: [
     'build',
+    '--build-arg',
+    'PYTHON_VERSION=3.7',
     '-t',
     'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.7',
-    'python3.7/'
+    'python/'
   ]
   waitFor: ['-']
 
@@ -24,9 +26,11 @@ steps:
   id: python3.8
   args: [
     'build',
+    '--build-arg',
+    'PYTHON_VERSION=3.8',
     '-t',
     'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.8',
-    'python3.8/'
+    'python/'
   ]
   waitFor: ['-']
 
@@ -46,9 +50,11 @@ steps:
   id: python3.9
   args: [
     'build',
+    '--build-arg',
+    'PYTHON_VERSION=3.9',
     '-t',
     'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.9',
-    'python3.9/'
+    'python/'
   ]
   waitFor: ['-']
 
@@ -68,9 +74,11 @@ steps:
   id: python3.10
   args: [
     'build',
+    '--build-arg',
+    'PYTHON_VERSION=3.10',
     '-t',
     'gcr.io/$PROJECT_ID/github.com/globalfishingwatch/gfw-bash-pipeline:latest-python3.10',
-    'python3.10/'
+    'python/'
   ]
   waitFor: ['-']
 
